@@ -2,7 +2,7 @@
 
 A lightweight tool for checking self-hosted large language model services before production deployment.
 
-[Chinese documentation](readme.v1.zh_CN.md)
+[Chinese documentation](README.zh_CN.md)
 
 Measure latency, throughput, request errors, prefix-cache reuse and chat interface behavior through an OpenAI-compatible service. Compare measurements with any number of user-supplied references. No vendor reference data or automatic admission verdicts are bundled.
 
