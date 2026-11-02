@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "name": "demo-a",
+  "description": "FACTORY supplies baseline_ms; PROFILES supplies limits_ms. Values are copied from the legacy project and have not been independently verified against original measurements. Hardware, workload, tokenizer and timing-definition equivalence are not established. No legacy band exists for input lengths >= 200000; no extrapolation is applied.",
+  "conditions": {
+    "concurrency": 10,
+    "max_tokens": 512,
+    "min_samples": 10,
+    "min_completion_tokens": 128,
+    "require_cold_cache": true,
+    "allow_reasoning": false
+  },
+  "bands": [
+    {
+      "min_input_tokens": 10000,
+      "max_input_tokens": 32000,
+      "baseline_ms": {
+        "ttft_avg": 7464,
+        "ttft_p90": 12000,
+        "tpot_avg": 17,
+        "tpot_p50": 14,
+        "tpot_p90": 28
+      },
+      "limits_ms": {
+        "ttft_avg": 9703,
+        "ttft_p90": 18000,
+        "tpot_avg": 22,
+        "tpot_p50": 18,
+        "tpot_p90": 36
+      }
+    },
+    {
+      "min_input_tokens": 32000,
+      "max_input_tokens": 64000,
+      "baseline_ms": {
+        "ttft_avg": 6387,
+        "ttft_p90": 10000,
+        "tpot_avg": 17,
+        "tpot_p50": 14,
+        "tpot_p90": 28
+      },
+      "limits_ms": {
+        "ttft_avg": 8303,
+        "ttft_p90": 15000,
+        "tpot_avg": 22,
+        "tpot_p50": 18,
+        "tpot_p90": 36
+      }
+    },
+    {
+      "min_input_tokens": 64000,
+      "max_input_tokens": 128000,
+      "baseline_ms": {
+        "ttft_avg": 6300,
+        "ttft_p90": 10500,
+        "tpot_avg": 17,
+        "tpot_p50": 14,
+        "tpot_p90": 28
+      },
+      "limits_ms": {
+        "ttft_avg": 8190,
+        "ttft_p90": 15750,
+        "tpot_avg": 22,
+        "tpot_p50": 18,
+        "tpot_p90": 36
+      }
+    },
+    {
+      "min_input_tokens": 128000,
+      "max_input_tokens": 200000,
+      "baseline_ms": {
+        "ttft_avg": 17327,
+        "ttft_p90": 25000,
+        "tpot_avg": 17,
+        "tpot_p50": 14,
+        "tpot_p90": 28
+      },
+      "limits_ms": {
+        "ttft_avg": 22525,
+        "ttft_p90": 37500,
+        "tpot_avg": 22,
+        "tpot_p50": 18,
+        "tpot_p90": 36
+      }
+    }
+  ]
+}

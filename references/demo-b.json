@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "name": "demo-b",
+  "description": "FACTORY supplies baseline_ms; PROFILES supplies limits_ms. Values are copied from the legacy project and have not been independently verified against original measurements. Hardware, workload, tokenizer and timing-definition equivalence are not established.",
+  "conditions": {
+    "concurrency": 10,
+    "max_tokens": 512,
+    "min_samples": 10,
+    "min_completion_tokens": 128,
+    "require_cold_cache": true,
+    "allow_reasoning": false
+  },
+  "bands": [
+    {
+      "min_input_tokens": 10000,
+      "max_input_tokens": 32000,
+      "baseline_ms": {
+        "ttft_avg": 2100,
+        "ttft_p90": 3800,
+        "tpot_avg": 14,
+        "tpot_p50": 12,
+        "tpot_p90": 17
+      },
+      "limits_ms": {
+        "ttft_avg": 2730,
+        "ttft_p90": 5700,
+        "tpot_avg": 18,
+        "tpot_p50": 16,
+        "tpot_p90": 22
+      }
+    },
+    {
+      "min_input_tokens": 32000,
+      "max_input_tokens": 64000,
+      "baseline_ms": {
+        "ttft_avg": 2500,
+        "ttft_p90": 4500,
+        "tpot_avg": 14,
+        "tpot_p50": 12,
+        "tpot_p90": 17
+      },
+      "limits_ms": {
+        "ttft_avg": 3250,
+        "ttft_p90": 6750,
+        "tpot_avg": 18,
+        "tpot_p50": 16,
+        "tpot_p90": 22
+      }
+    },
+    {
+      "min_input_tokens": 64000,
+      "max_input_tokens": 128000,
+      "baseline_ms": {
+        "ttft_avg": 2200,
+        "ttft_p90": 4000,
+        "tpot_avg": 14,
+        "tpot_p50": 12,
+        "tpot_p90": 17
+      },
+      "limits_ms": {
+        "ttft_avg": 2860,
+        "ttft_p90": 6000,
+        "tpot_avg": 18,
+        "tpot_p50": 16,
+        "tpot_p90": 22
+      }
+    },
+    {
+      "min_input_tokens": 128000,
+      "max_input_tokens": 200000,
+      "baseline_ms": {
+        "ttft_avg": 4200,
+        "ttft_p90": 6500,
+        "tpot_avg": 14,
+        "tpot_p50": 12,
+        "tpot_p90": 17
+      },
+      "limits_ms": {
+        "ttft_avg": 5460,
+        "ttft_p90": 9750,
+        "tpot_avg": 18,
+        "tpot_p50": 16,
+        "tpot_p90": 22
+      }
+    },
+    {
+      "min_input_tokens": 200000,
+      "max_input_tokens": null,
+      "baseline_ms": {
+        "ttft_avg": 6500,
+        "ttft_p90": 10000,
+        "tpot_avg": 14,
+        "tpot_p50": 12,
+        "tpot_p90": 17
+      },
+      "limits_ms": {
+        "ttft_avg": 8450,
+        "ttft_p90": 15000,
+        "tpot_avg": 18,
+        "tpot_p50": 16,
+        "tpot_p90": 22
+      }
+    }
+  ]
+}

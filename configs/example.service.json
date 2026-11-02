@@ -1,0 +1,18 @@
+{
+  "base_url": "http://127.0.0.1:8000/v1",
+  "model": "your-served-model",
+  "api_key_env": "LLM_API_KEY",
+  "require_api_key": true,
+  "max_context_tokens": 32768,
+  "lengths": [4000, 8000, 16000],
+  "timeout_s": 900,
+  "read_timeout_s": 300,
+  "max_tokens": 512,
+  "min_completion_tokens": 128,
+  "length_tolerance": 0.02,
+  "require_cold_cache": true,
+  "allow_reasoning": false,
+  "request_extra": {},
+  "template_options": {},
+  "thinking_variants": {}
+}

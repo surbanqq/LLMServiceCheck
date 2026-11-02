@@ -1,0 +1,23 @@
+{
+  "base_url": "https://treasured-velvet-2169-8000.east3.casdao.com:2005/v1",
+  "model": "qwen3.8-27b",
+  "api_key_env": "LLM_API_KEY",
+  "require_api_key": true,
+  "max_context_tokens": 262144,
+  "lengths": [16000, 48000, 64000, 100000, 160000, 224000],
+  "timeout_s": 900,
+  "read_timeout_s": 300,
+  "max_tokens": 512,
+  "min_completion_tokens": 128,
+  "length_tolerance": 0.02,
+  "require_cold_cache": true,
+  "allow_reasoning": false,
+  "request_extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "template_options": {
+    "enable_thinking": false
+  }
+}
