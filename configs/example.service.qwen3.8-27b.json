@@ -1,5 +1,5 @@
 {
-  "base_url": "https://treasured-velvet-2169-8000.east3.casdao.com:2005/v1",
+  "base_url": "https://treasured-velvet-2169-8000.east3.XXXXXXX.com:2005/v1",
   "model": "qwen3.8-27b",
   "api_key_env": "LLM_API_KEY",
   "require_api_key": true,
